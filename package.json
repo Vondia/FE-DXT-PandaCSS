@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prepare": "panda codegen",
+    "dev": "rm -rf .next && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,11 +13,16 @@
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "appwrite": "^12.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.13.1",
+    "encoding": "^0.1.13"
   }
 }
