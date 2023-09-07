@@ -12,7 +12,12 @@ export default async function CarsList() {
         {cars.map((car) => (
             <li className={vstack({})} key={car.$id}>
                 <Link href={`/${car.$id}`}>
-                {car.carName}
+                <h2>{car.carName}</h2>
+        <p>`Є{car.carPrice},-/day`</p>
+        <p>{car.fuel}</p>
+        <p>{car.seats}</p>
+        <p>{car.gearType}</p>
+        <img src={car.imageUrl} alt={car.carName} height="200px" width="300px" />
                 </Link>
             </li>
         ))}
