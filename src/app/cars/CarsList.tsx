@@ -11,7 +11,7 @@ export default async function CarsList() {
     <ul className={hstack({ gap: '6'})}>
         {cars.map((car) => (
             <li className={vstack({})} key={car.$id}>
-                <Link href={`/${car.$id}`}>
+                <Link href={`/car/${car.$id}`}>
                     <h2>{car.carName}</h2>
                     <p>`Є{car.carPrice},-/day`</p>
                     <p>{car.fuel}</p>

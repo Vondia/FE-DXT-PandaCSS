@@ -1,6 +1,6 @@
 import React from 'react'
 import CarDetails from './CarDetails'
-import { PageProps } from '../../../.next/types/app/layout'
+import { PageProps } from '../../../../.next/types/app/layout'
 import { getCarById } from '@/utils/Cars'
 
 // const delay = (delayInms: number) => {

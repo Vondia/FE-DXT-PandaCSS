@@ -1,6 +1,6 @@
 import { Car } from '@/utils/Cars';
 import React from 'react'
-import { css } from '../../../styled-system/css';
+import { css } from '../../../../styled-system/css';
 
 interface CarDetailsProps {
     car: Car;
