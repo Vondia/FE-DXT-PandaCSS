@@ -5,7 +5,7 @@ import CarsList from './CarsList';
 
 export default function Cars() {
   return (
-        <div className={hstack({ gap: '6', color: "white", fontWeight: "bold" })}>
+        <div className={hstack({ gap: '6', fontWeight: "bold" })}>
             <CarsList />
         </div>
   );

@@ -1,4 +1,4 @@
-import { Client, Account, ID, Databases } from 'appwrite';
+import { Client, Databases } from 'appwrite';
 export const appwriteClient = new Client()
   .setEndpoint(process.env.APPWRITE_ENDPOINT || '')
   .setProject(process.env.APPWRITE_PROJECT_ID || '');
