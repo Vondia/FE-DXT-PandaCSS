@@ -10,7 +10,18 @@ export const getCars = async (): Promise<Car[]> => {
   return cars;
 };
 
+export const deleteCar = async (id: string): Promise<string> => {
+  await appwriteDatabase.deleteDocument(
+    process.env.APPWRITE_DATABASE_ID || '',
+    process.env.APPWRITE_CARS_COLLECTION_ID || '',
+    id
+  );
+  return "Deleted succesfully"
+}
+
 export const createCar = async (car: Car): Promise<Car> => {
+  console.log("here");
+debugger;
   const createdCar = (await appwriteDatabase.createDocument(
     process.env.APPWRITE_DATABASE_ID || '',
     process.env.APPWRITE_CARS_COLLECTION_ID || '',
